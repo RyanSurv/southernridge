@@ -12,6 +12,8 @@ import { LandingWelcomeComponent } from './pages/landing/landing-welcome/landing
 import { LandingRoomsComponent } from './pages/landing/landing-rooms/landing-rooms.component';
 import { LandingPricingComponent } from './pages/landing/landing-pricing/landing-pricing.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { RulesComponent } from './pages/rules/rules.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,12 @@ import { FooterComponent } from './shared/footer/footer.component';
     LandingWelcomeComponent,
     LandingRoomsComponent,
     LandingPricingComponent,
-    FooterComponent
+    FooterComponent,
+    RulesComponent,
+    GalleryComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

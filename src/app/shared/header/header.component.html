@@ -1,15 +1,34 @@
 <div class="header container">
-  <div class="header_logo">
-    <h2>Southern Ridge <span>ATV</span></h2>
+  <div
+    class="header_logo"
+    [ngStyle]="{ color: router.url !== '/' ? 'var(--color-primary)' : null }"
+    [routerLink]="['/']"
+  >
+    <h2>
+      Southern Ridge
+      <span [ngStyle]="{ color: router.url !== '/' ? '#222' : null }">ATV</span>
+    </h2>
   </div>
   <nav class="header_menu">
-    <ul>
-      <li><a>Home</a></li>
-      <li><a>Gallery</a></li>
+    <ul [ngStyle]="{ color: router.url !== '/' ? '#222' : null }">
+      <li>
+        <a
+          [routerLink]="['/']"
+          routerLinkActive="router-link-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li [routerLink]="['/gallery']" routerLinkActive="router-link-active">
+        <a>Gallery</a>
+      </li>
       <li><a>Events</a></li>
-      <li><a>Rules</a></li>
-      <li><a>Waiver</a></li>
-      <li><a>Contact</a></li>
+      <li>
+        <a [routerLink]="['/rules']" routerLinkActive="router-link-active"
+          >Rules</a
+        >
+      </li>
+      <li><a href="/assets/release_2020.pdf" target="_blank">Waiver</a></li>
     </ul>
   </nav>
 </div>

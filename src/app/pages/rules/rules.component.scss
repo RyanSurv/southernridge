@@ -1,0 +1,27 @@
+.rules {
+  margin-bottom: var(--size-large);
+
+  &_form {
+    background-color: var(--color-secondary);
+    padding: var(--size-large) 0;
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  &_rules {
+    margin: var(--size-large) 0;
+    text-align: center;
+
+    h1 {
+      margin-bottom: var(--size-large);
+    }
+
+    &_rule {
+      margin-top: var(--size-small);
+    }
+  }
+}

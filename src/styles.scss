@@ -66,23 +66,10 @@ ul {
 }
 
 hr {
-  overflow: visible; /* For IE */
-  height: 30px;
-  border-style: solid;
-  border-color: rgb(75, 75, 75);
-  border-width: 1px 0 0 0;
-  border-radius: 20px;
-}
-hr:before {
-  /* Not really supposed to work, but does */
-  display: block;
-  content: "";
-  height: 30px;
-  margin-top: -31px;
-  border-style: solid;
-  border-color: rgb(75, 75, 75);
-  border-width: 0 0 1px 0;
-  border-radius: 20px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .container {

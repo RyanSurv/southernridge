@@ -1,0 +1,23 @@
+<div class="rules">
+  <div class="rules_form">
+    <div class="container">
+      <h3>Download our release form here and save time at check in</h3>
+      <a
+        href="/assets/release_2020.pdf"
+        target="_blank"
+        class="button button-primary"
+        >Release Form</a
+      >
+    </div>
+  </div>
+  <div class="rules_rules">
+    <div class="container">
+      <h1>Southern Ridge ATV Park Rules And Regulations</h1>
+      <div class="rules_rules_rule" *ngFor="let rule of rules; let i = index">
+        <p>
+          <span class="text-bold color-primary">{{ i + 1 }})</span> {{ rule }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.gallery {
+  &_head {
+    text-align: center;
+    padding: var(--size-large) 0;
+    background-color: var(--color-secondary);
+
+    p {
+      margin-top: var(--size-small);
+    }
+  }
+
+  &_images {
+    padding: var(--size-large) 0;
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: var(--size-medium);
+    }
+
+    &_image {
+      height: 20rem;
+      background-color: salmon;
+    }
+  }
+}

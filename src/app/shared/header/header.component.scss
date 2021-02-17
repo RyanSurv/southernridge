@@ -8,6 +8,10 @@
   &_logo {
     text-transform: uppercase;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     span {
       color: var(--color-secondary);
     }
@@ -20,6 +24,10 @@
 
         &:not(:first-child) {
           margin-left: var(--size-medium);
+        }
+
+        .router-link-active {
+          color: var(--color-secondary);
         }
 
         a {
