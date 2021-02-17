@@ -1,0 +1,36 @@
+.header {
+  padding: var(--size-small) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+
+  &_logo {
+    text-transform: uppercase;
+
+    span {
+      color: var(--color-secondary);
+    }
+  }
+
+  &_menu {
+    ul {
+      li {
+        display: inline;
+
+        &:not(:first-child) {
+          margin-left: var(--size-medium);
+        }
+
+        a {
+          transition: all 0.2s;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--color-secondary);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  padding: var(--size-large) 0;
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &_column {
+    max-width: 20%;
+
+    h3 {
+      color: var(--color-primary);
+    }
+
+    ul,
+    button {
+      margin-top: var(--size-small-medium);
+
+      li {
+        margin-top: var(--size-extra-small);
+
+        a {
+          transition: all 0.2s;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}

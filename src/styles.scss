@@ -1,1 +1,246 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --color-primary: #16a085;
+  --color-primary-dark: #165375;
+  --color-secondary: #f4d03f;
+  --color-white: #f9f9f9;
+  --color-white-2: #e9e9e9;
+  --color-light: #cccccc;
+  --color-light-2: #bbbbbb;
+  --color-gray: #666;
+  --color-black: #222;
+  --color-red: #d63031;
+  --color-green: #00b894;
+
+  --size-extra-small: 1rem;
+  --size-small: 2rem;
+  --size-small-medium: 4rem;
+  --size-medium: 6rem;
+  --size-medium-large: 8rem;
+  --size-large: 10rem;
+  --size-extra-large: 12rem;
+
+  --shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  --shadow-right: 3px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  --shadow-left: -3px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  --shadow-inset: inset 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-family: "Lora", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Hind Madurai", sans-serif;
+  background-color: var(--color-white);
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: rgb(75, 75, 75);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgb(75, 75, 75);
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 117rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.color-primary {
+  color: var(--color-primary) !important;
+}
+
+.color-red {
+  color: var(--color-red) !important;
+}
+
+.color-green {
+  color: var(--color-green) !important;
+}
+
+.color-light-2 {
+  color: var(--color-light-2) !important;
+}
+
+.color-white {
+  color: var(--color-white) !important;
+}
+
+.color-black {
+  color: var(--color-black) !important;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.py-s {
+  padding: var(--size-small) 0;
+}
+
+.mt-s {
+  margin-top: var(--size-small);
+}
+
+.mt-m {
+  margin-top: var(--size-medium);
+}
+
+.mb-xs {
+  margin-bottom: var(--size-extra-small);
+}
+
+.ml-s {
+  margin-left: var(--size-small);
+}
+
+.ml-xs {
+  margin-left: var(--size-extra-small);
+}
+
+.card {
+  background-color: white;
+  padding: var(--size-small);
+}
+
+.button {
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 1.4rem;
+  padding: var(--size-extra-small) var(--size-small);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+
+  &:disabled {
+    background-color: var(--color-light-2);
+    color: var(--color-gray);
+
+    &:hover {
+      cursor: default;
+      transform: none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+  }
+
+  &-small {
+    font-size: 1rem;
+  }
+
+  &-large {
+    font-size: 2rem;
+  }
+
+  &-landing {
+    border-radius: var(--size-extra-small);
+    padding: var(--size-extra-small) var(--size-small-medium);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  &-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+  }
+
+  &-gradient {
+    background: var(--color-secondary);
+    background: linear-gradient(
+      90deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 100%
+    );
+  }
+
+  &-red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+
+  &-gray {
+    background-color: var(--color-light);
+    color: var(--color-gray);
+  }
+
+  &-nobg {
+    background-color: transparent;
+
+    &-primary:hover {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+
+    &-white:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+
+    &-danger:hover {
+      background-color: var(--color-red);
+      color: var(--color-white);
+    }
+  }
+}

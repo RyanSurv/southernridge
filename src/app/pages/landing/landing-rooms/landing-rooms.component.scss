@@ -1,0 +1,63 @@
+.rooms {
+  padding: var(--size-large) 0;
+  text-align: center;
+  background: linear-gradient(
+    125deg,
+    #0c6351 0%,
+    #108a72e5 15%,
+    #ceae2ee5 100%
+  );
+
+  &_head {
+    color: var(--color-white);
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: var(--size-small);
+    }
+  }
+
+  &_list {
+    margin-top: var(--size-small-medium);
+
+    &_building {
+      &:not(:first-child) {
+        margin-top: var(--size-small);
+      }
+
+      width: 100%;
+
+      h3 {
+        font-size: 3.2rem;
+        color: var(--color-secondary);
+      }
+
+      table {
+        width: 100%;
+        margin-top: var(--size-small);
+        border-collapse: collapse;
+
+        tr {
+          background-color: var(--color-white);
+        }
+
+        td,
+        th {
+          padding: var(--size-extra-small) var(--size-small);
+        }
+
+        th {
+          background-color: var(--color-secondary);
+
+          &:nth-child(even) {
+            background-color: var(--color-primary);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.hero {
+  margin-top: -7rem;
+  height: 70rem;
+  background: rgb(19, 17, 29);
+  background: linear-gradient(125deg, #0c6351 0%, #108a72e5 15%, #ceae2ee5 100%),
+    url("/assets/images/hero001.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &_cta {
+    max-width: 60%;
+
+    h1 {
+      font-size: 5.6rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: var(--size-small);
+      line-height: 3.2rem;
+    }
+
+    &_buttons {
+      margin-top: var(--size-medium);
+
+      .button-nobg {
+        margin-left: var(--size-small-medium);
+        color: var(--color-white);
+
+        &:hover {
+          color: var(--color-black);
+        }
+      }
+    }
+  }
+}

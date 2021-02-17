@@ -1,0 +1,57 @@
+.welcome {
+  padding: var(--size-large) 0;
+  text-align: center;
+
+  &_head {
+    h2 {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: var(--size-small);
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: var(--size-small-medium);
+  }
+
+  &_hours,
+  &_form {
+    width: 40%;
+
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+
+  &_hours {
+    .items {
+      &_item {
+        p.text-bold {
+          margin-bottom: var(--size-extra-small);
+          color: var(--color-primary);
+        }
+
+        margin-top: var(--size-small);
+      }
+    }
+  }
+
+  &_form {
+    p {
+      // span {
+      //   background-color: var(--color-primary);
+      //   color: var(--color-white);
+      // }
+    }
+
+    p,
+    button {
+      margin-top: var(--size-small);
+    }
+  }
+}

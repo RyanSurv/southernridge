@@ -1,0 +1,45 @@
+.pricing {
+  padding: var(--size-large) 0;
+  text-align: center;
+  background-color: var(--color-white-2);
+
+  &_head {
+    h2 {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: var(--size-small);
+    }
+  }
+
+  &_prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: var(--size-small-medium);
+
+    &-ride,
+    &-relax,
+    &-repeat {
+      max-width: 30%;
+
+      hr {
+        margin-top: var(--size-small);
+      }
+
+      .text-bold {
+        color: var(--color-primary);
+      }
+
+      h3 {
+        font-size: 2.4rem;
+        color: var(--color-primary);
+      }
+
+      p {
+        margin-top: var(--size-small);
+      }
+    }
+  }
+}
