@@ -74,7 +74,7 @@ hr {
 
 .container {
   max-width: 117rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: auto;
 }
 
@@ -104,6 +104,14 @@ hr {
 
 .color-black {
   color: var(--color-black) !important;
+}
+
+.text-small {
+  font-size: 1.4rem;
+}
+
+.text-light {
+  color: var(--color-gray);
 }
 
 .ta-r {

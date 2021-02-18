@@ -9,12 +9,19 @@
         quam.
       </p>
       <div class="hero_cta_buttons">
-        <button class="button button-large button-secondary color-black">
-          Contact Us
+        <button
+          class="button button-large button-secondary color-black"
+          [routerLink]="['/events']"
+        >
+          Events
         </button>
-        <button class="button button-large button-nobg button-nobg-white">
+        <a
+          href="/assets/release_2020.pdf"
+          target="_blank"
+          class="button button-large button-nobg button-nobg-white"
+        >
           Print Waiver
-        </button>
+        </a>
       </div>
     </div>
   </div>

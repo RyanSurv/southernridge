@@ -14,6 +14,7 @@ import { LandingPricingComponent } from './pages/landing/landing-pricing/landing
 import { FooterComponent } from './shared/footer/footer.component';
 import { RulesComponent } from './pages/rules/rules.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { EventsComponent } from './pages/events/events.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
     FooterComponent,
     RulesComponent,
     GalleryComponent,
+    EventsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

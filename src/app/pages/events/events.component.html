@@ -1,0 +1,29 @@
+<div class="events">
+  <div class="events_head">
+    <div class="container">
+      <h1>Events</h1>
+      <p>
+        We have big plans, so keep a look out for new events happening at
+        Southern Ridge ATV Park!
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="events_events">
+      <div
+        class="events_events_event"
+        *ngFor="let event of events; let i = index"
+        [ngClass]="{ right: i % 2 === 1 }"
+      >
+        <div class="events_events_event_img">
+          <img [src]="event.img" alt="" />
+        </div>
+        <div class="events_events_event_text">
+          <h3>{{ event.title }}</h3>
+          <p class="date text-light text-small">{{ event.date }}</p>
+          <p class="bio">{{ event.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

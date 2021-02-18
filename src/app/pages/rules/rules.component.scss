@@ -14,14 +14,32 @@
 
   &_rules {
     margin: var(--size-large) 0;
-    text-align: center;
+    text-align: left;
 
     h1 {
+      text-align: center;
       margin-bottom: var(--size-large);
     }
 
     &_rule {
       margin-top: var(--size-small);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .rules {
+    &_form {
+      text-align: center;
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      a {
+        margin-top: var(--size-medium);
+      }
     }
   }
 }

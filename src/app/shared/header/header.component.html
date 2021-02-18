@@ -19,10 +19,12 @@
           >Home</a
         >
       </li>
-      <li [routerLink]="['/gallery']" routerLinkActive="router-link-active">
+      <!-- <li [routerLink]="['/gallery']" routerLinkActive="router-link-active">
         <a>Gallery</a>
+      </li> -->
+      <li [routerLink]="['/events']" routerLinkActive="router-link-active">
+        <a>Events</a>
       </li>
-      <li><a>Events</a></li>
       <li>
         <a [routerLink]="['/rules']" routerLinkActive="router-link-active"
           >Rules</a
@@ -31,4 +33,28 @@
       <li><a href="/assets/release_2020.pdf" target="_blank">Waiver</a></li>
     </ul>
   </nav>
+  <div class="header_menu_mobile" (click)="mobile_menu = !mobile_menu">
+    <i
+      class="fas fa-bars"
+      [ngStyle]="{ color: router.url !== '/' ? 'var(--color-primary)' : null }"
+    ></i>
+  </div>
+  <div class="header_menu_mobile_menu" *ngIf="mobile_menu">
+    <div class="bg" (click)="mobile_menu = false"></div>
+    <ul>
+      <li
+        [routerLink]="['/']"
+        routerLinkActive="router-link-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </li>
+      <li [routerLink]="['/events']" routerLinkActive="router-link-active">
+        Events
+      </li>
+      <li [routerLink]="['/rules']" routerLinkActive="router-link-active">
+        Rules
+      </li>
+    </ul>
+  </div>
 </div>
